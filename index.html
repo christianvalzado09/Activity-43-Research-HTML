@@ -1,7 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Sample Web Page</title>
+<title>Activity 43: Research HTML</title>
+<h1>Activity 43: Research HTML </h1>
+    <nav>
+        <ul>
+            <li> <a href="#header">Header</a>
+            <li> <a href="#headings">Headings h1 - h6</a> </li>
+            <li> <a href="#ul&ol">Unordered List and Ordered List</a> </li>
+            <li> <a href="#tables">Table</a> </li>
+            <li> <a href="#forms">Forms</a> </li>
+            <li> <a href="#images">Images</a> </li>
+            <li> <a href="#canvas">canvas</a></li>
+            <li> <a href="#Video">Videos</a></li>
+            <li> <a href="#Youtube">Youtube</a></li>
+            <li> <a href="#DragandDrop">Drag and Drop</a></li>
+        <ul>
+  </nav>
 </head>
 <body>
 
@@ -14,6 +29,7 @@
 
 <p>This is a simple web page created as an example to showcase various HTML elements and how they work together in a document.</p>
 
+<h2>Unordered List</h2>
 <ul>
     <li>Explore different sections</li>
     <li>Check out useful resources</li>
@@ -21,6 +37,7 @@
     <li>Follow the latest updates</li>
     <li>Contact us for more info</li>
 </ul>
+<h2>Ordered List</h2>
 <ol>
     <li>Create an account</li>
     <li>Log in to access features</li>
@@ -37,13 +54,36 @@
         border: 1px solid black ;
     }
 </style>
-<table style="width:100%;">
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: Arial, sans-serif;
+        margin-top: 20px;
+    }
+    td {
+        padding: 15px;
+        text-align: center;
+        border: 1px solid #ddd;
+        background-color: #f9f9f9;
+    }
+    tr:nth-child(odd) td {
+        background-color: #f1f1f1;
+    }
+    tr:nth-child(even) td {
+        background-color: #fff;
+    }
+    tr:hover td {
+        background-color: #e1e1e1;
+    }
+</style>
+
+<table>
     <tr>
         <td>Product 1</td>
         <td>Product 2</td>
         <td>Product 3</td>
     </tr>
-
     <tr>
         <td>Product 4</td>
         <td>Product 5</td>
@@ -55,22 +95,22 @@
         <td>Product 9</td>
     </tr>
 </table>
+
 <br>
 <form action="index.html">
 <label for="fname">"First Name": </label><br>
 <input type ="text" id="fname" name="fname" value="Christian">
 <br>
-<form action="index.html">
+
 <label for="Lname">"Last Name"</label><br>
 <input type="text" id="Lname" name="Lname" value="Valzado">
 <br>
-<form action="index.html">
+
 <label for ="button"> </label> <br>
-<input type="text" id="button" name="button" value="button">
+<input type="submit" value="submit">
+<form>
 <br>
     
-
-
 
 <h2> DIV IMAGES </h2>
 <div class = "Sample">
@@ -78,37 +118,26 @@
     <img src ="url-link of image" alt= "Sample" width="600" height="400">
     </a>
 </div>
+<br>
 
-<h2> Forms </h2>
-<form action="index.html">
-<label for="fname"> First Name: </label><br>
-<input type = "text" id="fname" name="fname" value= "christian">
-</br>
-
-<label for = "lname" > Last Name: </label> <br>
-<input type="text" id="lname" name="lname" value="valzado">
-<br> </br>
-<input type="Submit" value="Submit">
-</form>
-
-<h2> DIV IMAGES </h2>
-<div class = "Sample"> 
-    <a target="_blank" href="url-link of image">
-    <img src ="url-link of image" alt= "Sample" width="600" height="400">
-    </a>
-</div>
 
 <h2> DIV CANVAS </h2>
 <canvas id="myCanvas" width="300" height="200" style="border:2px solid black;">
 </canvas>
 
-<h2> DIV VIDEO </h2>
-    <video width="120" height="100">
-        <source src="video-url-link" type="file-format">
-        <source src="media-type-url-link" type="media-type">
-  Your browser does not support the video tag.
+<h2> DIV VIDEO</h2>
+<video width="320" height="240" controls>
+    <source src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" type="video/mp4">
+    <source src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.ogg" type="video/ogg">
+    Your browser does not support the video tag.
 </video>
+<p>
+    Video courtesy of 
+    <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
+    </p>
+    
 
+<br>
 <H2> DIV YOUTUBE </H2>
 <iframe width="400" height="200"
 src="https://www.youtube.com/embed/a3GeLwk-hy0?si=fMf6pDFNO8sYvsEK">
