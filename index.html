@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sample Web Page</title>
+</head>
+<body>
+
+<h1>Welcome to My Website</h1>
+<h2>About This Page</h2>
+<h3>Features of the Site</h3>
+<h4>Additional Information</h4>
+<h5>Minor Details</h5>
+<h6>Footnotes</h6>
+
+<p>This is a simple web page created as an example to showcase various HTML elements and how they work together in a document.</p>
+
+<ul>
+    <li>Explore different sections</li>
+    <li>Check out useful resources</li>
+    <li>Learn more about us</li>
+    <li>Follow the latest updates</li>
+    <li>Contact us for more info</li>
+</ul>
+<ol>
+    <li>Create an account</li>
+    <li>Log in to access features</li>
+    <li>Navigate through the dashboard</li>
+    <li>Customize your settings</li>
+    <li>Save your preferences</li>
+<ol>       
+<br>
+
+
+
+<style>
+    table, th,td {
+        border: 1px solid black ;
+    }
+</style>
+<table style="width:100%;">
+    <tr>
+        <td>Product 1</td>
+        <td>Product 2</td>
+        <td>Product 3</td>
+    </tr>
+
+    <tr>
+        <td>Product 4</td>
+        <td>Product 5</td>
+        <td>Product 6</td>
+    </tr>
+    <tr>
+        <td>Product 7</td>
+        <td>Product 8</td>
+        <td>Product 9</td>
+    </tr>
+</table>
+<br>
+<form action="index.html">
+<label for="fname">"First Name": </label><br>
+<input type ="text" id="fname" name="fname" value="Christian">
+<br>
+<form action="index.html">
+<label for="Lname">"Last Name"</label><br>
+<input type="text" id="Lname" name="Lname" value="Valzado">
+<br>
+<form action="index.html">
+<label for ="button"> </label> <br>
+<input type="text" id="button" name="button" value="button">
+<br>
+    
+
+
+
+<h2> DIV IMAGES </h2>
+<div class = "Sample">
+    <a target="_blank" href="url-link of image">
+    <img src ="url-link of image" alt= "Sample" width="600" height="400">
+    </a>
+</div>
+
+<h2> Forms </h2>
+<form action="index.html">
+<label for="fname"> First Name: </label><br>
+<input type = "text" id="fname" name="fname" value= "christian">
+</br>
+
+<label for = "lname" > Last Name: </label> <br>
+<input type="text" id="lname" name="lname" value="valzado">
+<br> </br>
+<input type="Submit" value="Submit">
+</form>
+
+<h2> DIV IMAGES </h2>
+<div class = "Sample"> 
+    <a target="_blank" href="url-link of image">
+    <img src ="url-link of image" alt= "Sample" width="600" height="400">
+    </a>
+</div>
+
+<h2> DIV CANVAS </h2>
+<canvas id="myCanvas" width="300" height="200" style="border:2px solid black;">
+</canvas>
+
+<h2> DIV VIDEO </h2>
+    <video width="120" height="100">
+        <source src="video-url-link" type="file-format">
+        <source src="media-type-url-link" type="media-type">
+  Your browser does not support the video tag.
+</video>
+
+<H2> DIV YOUTUBE </H2>
+<iframe width="400" height="200"
+src="https://www.youtube.com/embed/a3GeLwk-hy0?si=fMf6pDFNO8sYvsEK">
+</iframe>
+
+
+<h2> DIV DRAG AND DROP</h2>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<img id="drag1" src="url-image-link" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<h6> ps: this code is from w3schols.com</h6>
+<a href="https://www.w3schools.com/html/html5_draganddrop.asp">This is the source code</a>
+</body>
+</html>
